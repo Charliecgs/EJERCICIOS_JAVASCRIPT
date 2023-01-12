@@ -13,8 +13,14 @@ const avengers = [
   "Spiderman",
   "Captain M.",
 ];
+
 function findLongestWord(param) {
-  for (const large of avengers) {
-    large.length;
+  let avenger = "";
+  for (const item of param) {
+    if (item.length > avenger.length) {
+      avenger = item;
+    }
   }
+  return avenger;
 }
+console.log(findLongestWord(avengers));
