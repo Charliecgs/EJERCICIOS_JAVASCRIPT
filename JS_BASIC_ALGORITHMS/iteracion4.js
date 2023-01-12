@@ -1,4 +1,4 @@
-//Iteración #4: Arrays  
+//Iteración #4: Arrays
 
 //1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
 const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
@@ -14,18 +14,33 @@ console.log(avengers3.length);
 Muestra en consola el último personaje del array
 */
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
-rickAndMortyCharacters.push("Morty", "Summer")
-const ultimoPersonaje = rickAndMortyCharacters[rickAndMortyCharacters.length - 1];
+rickAndMortyCharacters.push("Morty", "Summer");
+const ultimoPersonaje =
+  rickAndMortyCharacters[rickAndMortyCharacters.length - 1];
 console.log(ultimoPersonaje);
 
 //1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
-const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+const rickAndMortyCharacters2 = [
+  "Rick",
+  "Beth",
+  "Jerry",
+  "Morty",
+  "Summer",
+  "Lapiz Lopez",
+];
 console.log(rickAndMortyCharacters2.pop());
 console.log(rickAndMortyCharacters2);
-console.log(rickAndMortyCharacters2[0])
-console.log(rickAndMortyCharacters2[rickAndMortyCharacters2.length -1]);
+console.log(rickAndMortyCharacters2[0]);
+console.log(rickAndMortyCharacters2[rickAndMortyCharacters2.length - 1]);
 
 //1.6 Elimina el segundo elemento del array y muestra el array por consola.
-const rickAndMortyCharacters3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+const rickAndMortyCharacters3 = [
+  "Rick",
+  "Beth",
+  "Jerry",
+  "Morty",
+  "Summer",
+  "Lapiz Lopez",
+];
 rickAndMortyCharacters3.splice(1, 1);
 console.log(rickAndMortyCharacters3);
