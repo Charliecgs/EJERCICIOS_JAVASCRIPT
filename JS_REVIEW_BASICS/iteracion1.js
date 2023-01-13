@@ -4,6 +4,12 @@
 de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. 
 Para filtrar las categorías puedes ayudarte de la función .includes()
 */
+
+
+//ESTE ESTA MAL TODAVIA NO LO HE HECHO
+
+
+
 const movies = [
   { title: "Madaraspar", duration: 192, categories: ["comedia", "aventura"] },
   { title: "Spiderpan", duration: 122, categories: ["aventura", "acción"] },
