@@ -2,8 +2,6 @@
 
 //Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.  Puedes usar este array para probar tu función:
 
-//ESTE ESTA MAL TODAVIA NO LO HE HECHO
-
 const counterWords = [
   "code",
   "repeat",
@@ -17,8 +15,20 @@ const counterWords = [
   "upgrade",
   "code",
 ];
+
 function repeatCounter(param) {
-  param.forEach(element => {
-    
-  });
+  const ordenados = param.sort();
+  contador = 1;
+
+  for (let i = 0; i < ordenados.length; i++) {
+    if (ordenados[i] == ordenados[i + 1]) {
+      contador = contador + 1;
+    } else {
+      contador = 0;
+    }
+    console.log(ordenados[i] + contador);
+  }
+
 }
+
+repeatCounter(counterWords);
