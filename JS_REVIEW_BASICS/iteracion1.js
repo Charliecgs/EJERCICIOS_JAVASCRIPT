@@ -5,10 +5,7 @@ de las películas e imprime por consola el array de categorías. Ten en cuenta q
 Para filtrar las categorías puedes ayudarte de la función .includes()
 */
 
-
 //ESTE ESTA MAL TODAVIA NO LO HE HECHO
-
-
 
 const movies = [
   { title: "Madaraspar", duration: 192, categories: ["comedia", "aventura"] },
@@ -25,9 +22,14 @@ const movies = [
   },
 ];
 
-const allCategories = [];
+const categories2 = [];
 
-for (const movie of movies) {
-  allCategories.push(movie.categories);
+for (const key of movies) {
+  for (key2 of key.categories) {
+    if (!categories2.includes(key2)) {
+      categories2.push(key2);
+    }
+  }
 }
-console.log(allCategories);
+
+console.log(categories2);
