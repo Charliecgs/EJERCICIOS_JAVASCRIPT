@@ -70,7 +70,7 @@ const streamers2 = [
 ];
 
 const newStreamers = streamers2.filter(
-  (streamer) => streamer.gameMorePlayed.includes("Legends") && streamer.age > 35
+  (streamer) => streamer.gameMorePlayed.includes("Legends")
 );
 
 for (let i = 0; i < streamers2.length; i++) {
