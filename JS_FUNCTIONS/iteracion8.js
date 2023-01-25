@@ -16,19 +16,16 @@ const counterWords = [
   "code",
 ];
 
+let contador = [];
 function repeatCounter(param) {
-  const ordenados = param.sort();
-  contador = 1;
-
-  for (let i = 0; i < ordenados.length; i++) {
-    if (ordenados[i] == ordenados[i + 1]) {
-      contador = contador + 1;
+  for (const word of param) {
+    if (contador[word]) {
+      contador[word]++;
     } else {
-      contador = 0;
+      contador[word] = 1;
     }
-    console.log(ordenados[i] + contador);
   }
-
+  console.log(contador);
 }
 
 repeatCounter(counterWords);
