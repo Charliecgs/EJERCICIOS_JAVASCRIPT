@@ -7,14 +7,15 @@
 const futbols = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
 
 const swap = (array, a, b) => {
-    const indiceDeA = array.indexOf(a);
-    const indiceDeB = array.indexOf(b);
 
-    array[indiceDeA] = b;
-    array[indiceDeB] = a;
+    const wordA = array[a];
+    const wordB = array[b];
+
+    array[a] = wordB;
+    array[b] = wordA;
 
     return array;
 
 }
 
-console.log(swap(futbols, "Mesirve", "Ronalguiño"));
+console.log(swap(futbols, 2, 1));
