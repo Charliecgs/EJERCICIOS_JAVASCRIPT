@@ -1,0 +1,41 @@
+header > nav{
+    background-color: #131313;
+    height: 90px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header > nav > ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .hero{
+    display: flex;
+    height: 750px;
+    overflow: hidden;
+}
+
+header > .hero > img{
+    width: 100%;
+    object-fit: cover;
+    animation: zoom 2s;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,77 @@
+.produc{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+main{
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > h2{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+
+.produc > figure > h3{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produc > figure > h4{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    width: 135px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.watch{
+    background-color: red;
+}
+
+.crying{
+    color: white;
+}
+
+.videocrying{
+    width: 100%;
+    
+}
+
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+}
+
+.video > div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
