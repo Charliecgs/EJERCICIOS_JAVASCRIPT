@@ -10,7 +10,7 @@ const streamers = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-const input = document.querySelector(".input");
+const input = document.querySelector(".inputClass");
 
 input.addEventListener("input", (e) => {
     const filtrados = streamers.filter((filtrado) => filtrado.name.includes(e.target.value) == true);
