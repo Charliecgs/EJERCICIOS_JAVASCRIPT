@@ -29,3 +29,16 @@ function repeatCounter(param) {
 }
 
 repeatCounter(counterWords);
+
+// OTRA FORMA
+
+// function repeatCounter(paramRept){ 
+//   const emptyObject = {}
+//   for (word of paramRept){
+//     if(word in emptyObject){
+//       emptyObject[word] += 1
+//     }else emptyObject[word] = 1
+//   }
+//   return emptyObject
+// }
+// console.log(repeatCounter(counterWords));
